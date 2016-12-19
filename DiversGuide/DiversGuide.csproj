@@ -310,7 +310,30 @@
     <Content Include="Content\libs\skeleton\images\favicon.png" />
     <Content Include="Content\libs\skeleton\index.html" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\Style\Bruger.css" />
+    <Content Include="Content\Style\Bruger.css">
+      <DependentUpon>Bruger.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Bruger.min.css">
+      <DependentUpon>Bruger.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Footer.css">
+      <DependentUpon>Footer.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Footer.min.css">
+      <DependentUpon>Footer.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Header.css">
+      <DependentUpon>Header.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Header.min.css">
+      <DependentUpon>Header.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Kontakt.css">
+      <DependentUpon>Kontakt.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Kontakt.min.css">
+      <DependentUpon>Kontakt.css</DependentUpon>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
@@ -322,6 +345,13 @@
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="Content\Style\Bruger.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Content\Style\Kontakt.less" />
+    <Content Include="Content\Style\Header.less" />
+    <Content Include="Content\Style\Footer.less" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -521,6 +551,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Bruger.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "Content/Style/Bruger.css",
+    "inputFile": "Content/Style/Bruger.less"
+  },
+  {
+    "outputFile": "Content/Style/Kontakt.css",
+    "inputFile": "Content/Style/Kontakt.less"
+  },
+  {
+    "outputFile": "Content/Style/Header.css",
+    "inputFile": "Content/Style/Header.less"
+  },
+  {
+    "outputFile": "Content/Style/Footer.css",
+    "inputFile": "Content/Style/Footer.less"
+  }
+]

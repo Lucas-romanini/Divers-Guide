@@ -1,0 +1,30 @@
+﻿* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #9dd9ff;
+  font-family: Verdana,Calibri;
+}
+/*▼▼Kontakt▼▼*/
+.kontakt {
+  margin-top: 100px;
+}
+.kontakt section div {
+  margin-bottom: 150px;
+}
+.kontakt h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.kontakt p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+.kontakt a {
+  font-size: 24px;
+}
+.kontakt img:first-of-type {
+  margin-bottom: 200px;
+}
+/*▲▲Kontakt▲▲*/
