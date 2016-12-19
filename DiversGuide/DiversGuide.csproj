@@ -155,6 +155,7 @@
     <Content Include="bin\System.Web.Webpages.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\JS\JavaScriptMap.js" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap.css" />
@@ -309,6 +310,7 @@
     <Content Include="Content\libs\skeleton\images\favicon.png" />
     <Content Include="Content\libs\skeleton\index.html" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Style\Bruger.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
