@@ -15,5 +15,10 @@ namespace DiversGuide.Controllers
         {
             return View();
         }
+
+        public ActionResult Kontakt()
+        {
+            return View();
+        }
     }
 }
