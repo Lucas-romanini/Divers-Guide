@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+}
+
+<head>
+    <!-- This stylesheet contains specific styles for displaying the map
+         on this page. Replace it with your own styles as described in the
+         documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial -->
+
+    <link href="~/Content/Style/Bruger.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="style-selector-control" class="map-control">
+        <select id="style-selector" class="selector-control">
+            <option value="default">Default</option>
+            <option value="retro" selected="selected">Retro</option>
+            <option value="light">Light blue</option>
+            <option value="hiding">Hide features</option>
+        </select>
+    </div>
+    <div id="map"></div>
+    <script src="~/Content/JS/JavaScriptMap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6NqQ3qph6ifsEQJg5c7b0y70kE6BvT8U&callback=initMap"
+            async defer></script>
+</body>
+
