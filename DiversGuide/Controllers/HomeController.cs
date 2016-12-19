@@ -8,6 +8,7 @@ namespace DiversGuide.Controllers
 {
     public class HomeController : Controller
     {
+        //andreas tst
         //dette er en test
         // GET: Home
         public ActionResult Index()
