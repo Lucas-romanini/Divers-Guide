@@ -7,7 +7,7 @@ namespace REPO_NAMESPACE
         
         public static SqlConnection GetCon()
         {
-            SqlConnection con = new SqlConnection("server=SERVER_IP;database=DATABASENAME;uid=USERNAME;pwd=PASSWORD;MultipleActiveResultSets=True");
+            SqlConnection con = new SqlConnection("server=194.255.108.50;database=dbdiversguide;uid=diversguide;pwd=eGAFfZl3;MultipleActiveResultSets=True");
             return con;
         }
 
