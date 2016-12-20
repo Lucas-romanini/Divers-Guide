@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 
 
-namespace REPO_NAMESPACE
+namespace DGrepo
 {
     public class AutoFac<T> where T : new()
     {

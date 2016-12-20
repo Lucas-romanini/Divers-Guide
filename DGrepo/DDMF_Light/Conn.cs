@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace REPO_NAMESPACE
+namespace DGrepo
 {
     public static class Conn
     {
