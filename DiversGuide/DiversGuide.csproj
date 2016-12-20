@@ -360,6 +360,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Content\DDMF_Light\AutoFac.cs" />
+    <Compile Include="Content\DDMF_Light\Conn.cs" />
+    <Compile Include="Content\DDMF_Light\Mapper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -579,7 +582,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>16075</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:16075/</IISUrl>
+          <IISUrl>http://localhost:3000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
