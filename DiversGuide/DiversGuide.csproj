@@ -334,6 +334,12 @@
     <Content Include="Content\Style\Header.min.css">
       <DependentUpon>Header.css</DependentUpon>
     </Content>
+    <Content Include="Content\Style\Index.css">
+      <DependentUpon>Index.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Index.min.css">
+      <DependentUpon>Index.css</DependentUpon>
+    </Content>
     <Content Include="Content\Style\Kontakt.css">
       <DependentUpon>Kontakt.less</DependentUpon>
     </Content>
@@ -7230,6 +7236,7 @@
     <Content Include="node_modules\yeast\LICENSE" />
     <Content Include="node_modules\yeast\package.json" />
     <Content Include="node_modules\yeast\README.md" />
+    <Content Include="Content\Style\Index.less" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
