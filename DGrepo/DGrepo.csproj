@@ -43,12 +43,20 @@
     <Compile Include="DDMF_Light\AutoFac.cs" />
     <Compile Include="DDMF_Light\Conn.cs" />
     <Compile Include="DDMF_Light\Mapper.cs" />
+    <Compile Include="Models\Categori.cs" />
+    <Compile Include="Models\Comments.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Laws.cs" />
+    <Compile Include="Models\Level.cs" />
+    <Compile Include="Models\rating.cs" />
+    <Compile Include="Models\SlaebeSteder.cs" />
+    <Compile Include="Models\Spots.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factories\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
