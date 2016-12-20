@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiversGuide", "DiversGuide\DiversGuide.csproj", "{5E88796A-C6C3-4454-9760-7FAB2735008D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGrepo", "DGrepo\DGrepo.csproj", "{0F912711-A30A-49E0-9014-3FF93BB860EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5E88796A-C6C3-4454-9760-7FAB2735008D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E88796A-C6C3-4454-9760-7FAB2735008D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E88796A-C6C3-4454-9760-7FAB2735008D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F912711-A30A-49E0-9014-3FF93BB860EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F912711-A30A-49E0-9014-3FF93BB860EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F912711-A30A-49E0-9014-3FF93BB860EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F912711-A30A-49E0-9014-3FF93BB860EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
