@@ -155,6 +155,10 @@
     <Content Include="bin\System.Web.Webpages.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dist\script.js" />
+    <Content Include="Content\dist\script.min.js" />
+    <Content Include="Content\dist\style.css" />
+    <Content Include="Content\dist\style.min.css" />
     <Content Include="Content\JS\JavaScriptMap.js" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
@@ -579,7 +583,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>16075</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:16075/</IISUrl>
+          <IISUrl>http://localhost:3000</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
