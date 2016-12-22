@@ -161,6 +161,9 @@
     <Content Include="Content\dist\script.min.js" />
     <Content Include="Content\dist\style.css" />
     <Content Include="Content\dist\style.min.css" />
+    <Content Include="Content\IMG\facebook_no_profile_pic2-jpg.jpg" />
+    <Content Include="Content\IMG\logo.png" />
+    <Content Include="Content\IMG\logomobil.png" />
     <Content Include="Content\JS\JavaScriptMap.js" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
@@ -370,6 +373,7 @@
     <Compile Include="Content\DDMF_Light\Conn.cs" />
     <Compile Include="Content\DDMF_Light\Mapper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -561,7 +565,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Bruger.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\User\user.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -571,11 +575,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DGrepo\DGrepo.csproj">
+      <Project>{0f912711-a30a-49e0-9014-3ff93bb860ee}</Project>
+      <Name>DGrepo</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
