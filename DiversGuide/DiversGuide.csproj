@@ -568,6 +568,7 @@
     <Content Include="Views\User\user.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Opret.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

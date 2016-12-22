@@ -2,13 +2,24 @@
 function initMap() {
     // Create the map with no initial style specified.
     // It therefore has default styling.
+    var spot = { lat: -25.363, lng: 131.044 };
+    var spot2 = { lat: 56.13330691237569, lng: 10.755615234375 };
     map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -33.86, lng: 151.209 },
+        center: { lat: 56.13330691237569, lng: 10.755615234375 },
         zoom: 13,
         mapTypeControl: false,
         mapTypeId: 'roadmap'
     });
+    var marker = new google.maps.Marker({
+        position: spot,
+        
+        map: map
+    });
+    var marker = new google.maps.Marker({
+        position: spot2,
 
+        map: map
+    });
     // Add a style-selector control to the map.
     var styleControl = document.getElementById('style-selector-control');
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
