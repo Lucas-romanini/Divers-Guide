@@ -161,6 +161,9 @@
     <Content Include="Content\dist\script.min.js" />
     <Content Include="Content\dist\style.css" />
     <Content Include="Content\dist\style.min.css" />
+    <Content Include="Content\IMG\facebook_no_profile_pic2-jpg.jpg" />
+    <Content Include="Content\IMG\logo.png" />
+    <Content Include="Content\IMG\logomobil.png" />
     <Content Include="Content\JS\JavaScriptMap.js" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
