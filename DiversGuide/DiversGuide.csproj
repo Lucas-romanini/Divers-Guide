@@ -155,44 +155,16 @@
     <Content Include="bin\System.Web.Webpages.Razor.dll" />
     <Content Include="bin\System.Web.Webpages.Razor.xml" />
     <Content Include="bin\System.Web.Webpages.xml" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dist\script.js" />
     <Content Include="Content\dist\script.min.js" />
     <Content Include="Content\dist\style.css" />
     <Content Include="Content\dist\style.min.css" />
     <Content Include="Content\IMG\facebook_no_profile_pic2-jpg.jpg" />
+    <Content Include="Content\IMG\Kontakt-img1.jpg" />
+    <Content Include="Content\IMG\Kontakt-img2.jpg" />
     <Content Include="Content\IMG\logo.png" />
     <Content Include="Content\IMG\logomobil.png" />
     <Content Include="Content\JS\JavaScriptMap.js" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap.css" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap.min.css" />
-    <Content Include="Content\libs\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\libs\bootstrap\dist\js\bootstrap.js" />
-    <Content Include="Content\libs\bootstrap\dist\js\bootstrap.min.js" />
-    <Content Include="Content\libs\bootstrap\dist\js\npm.js" />
-    <Content Include="Content\libs\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\libs\bootstrap\Gruntfile.js" />
-    <Content Include="Content\libs\bootstrap\grunt\bs-commonjs-generator.js" />
-    <Content Include="Content\libs\bootstrap\grunt\bs-glyphicons-data-generator.js" />
-    <Content Include="Content\libs\bootstrap\grunt\bs-lessdoc-parser.js" />
-    <Content Include="Content\libs\bootstrap\grunt\bs-raw-files-generator.js" />
-    <Content Include="Content\libs\bootstrap\grunt\change-version.js" />
-    <Content Include="Content\libs\bootstrap\js\affix.js" />
-    <Content Include="Content\libs\bootstrap\js\alert.js" />
-    <Content Include="Content\libs\bootstrap\js\button.js" />
-    <Content Include="Content\libs\bootstrap\js\carousel.js" />
-    <Content Include="Content\libs\bootstrap\js\collapse.js" />
-    <Content Include="Content\libs\bootstrap\js\dropdown.js" />
-    <Content Include="Content\libs\bootstrap\js\modal.js" />
-    <Content Include="Content\libs\bootstrap\js\popover.js" />
-    <Content Include="Content\libs\bootstrap\js\scrollspy.js" />
-    <Content Include="Content\libs\bootstrap\js\tab.js" />
-    <Content Include="Content\libs\bootstrap\js\tooltip.js" />
-    <Content Include="Content\libs\bootstrap\js\transition.js" />
-    <Content Include="Content\libs\bootstrap\package.js" />
     <Content Include="Content\libs\font-awesome\.gitignore" />
     <Content Include="Content\libs\font-awesome\css\font-awesome.css" />
     <Content Include="Content\libs\font-awesome\css\font-awesome.min.css" />
@@ -387,6 +359,7 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
@@ -396,109 +369,6 @@
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
-    <Content Include="Content\libs\bootstrap\.bower.json" />
-    <Content Include="Content\libs\bootstrap\bower.json" />
-    <Content Include="Content\libs\bootstrap\CHANGELOG.md" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.css.map" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap-theme.min.css.map" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap.css.map" />
-    <Content Include="Content\libs\bootstrap\dist\css\bootstrap.min.css.map" />
-    <Content Include="Content\libs\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\libs\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\libs\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\libs\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Content\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\libs\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Content\libs\bootstrap\Gemfile" />
-    <Content Include="Content\libs\bootstrap\Gemfile.lock" />
-    <Content Include="Content\libs\bootstrap\grunt\.jshintrc" />
-    <Content Include="Content\libs\bootstrap\grunt\configBridge.json" />
-    <Content Include="Content\libs\bootstrap\grunt\npm-shrinkwrap.json" />
-    <Content Include="Content\libs\bootstrap\grunt\sauce_browsers.yml" />
-    <Content Include="Content\libs\bootstrap\ISSUE_TEMPLATE.md" />
-    <Content Include="Content\libs\bootstrap\js\.jscsrc" />
-    <Content Include="Content\libs\bootstrap\js\.jshintrc" />
-    <Content Include="Content\libs\bootstrap\less\.csscomb.json" />
-    <Content Include="Content\libs\bootstrap\less\.csslintrc" />
-    <Content Include="Content\libs\bootstrap\less\alerts.less" />
-    <Content Include="Content\libs\bootstrap\less\badges.less" />
-    <Content Include="Content\libs\bootstrap\less\bootstrap.less" />
-    <Content Include="Content\libs\bootstrap\less\breadcrumbs.less" />
-    <Content Include="Content\libs\bootstrap\less\button-groups.less" />
-    <Content Include="Content\libs\bootstrap\less\buttons.less" />
-    <Content Include="Content\libs\bootstrap\less\carousel.less" />
-    <Content Include="Content\libs\bootstrap\less\close.less" />
-    <Content Include="Content\libs\bootstrap\less\code.less" />
-    <Content Include="Content\libs\bootstrap\less\component-animations.less" />
-    <Content Include="Content\libs\bootstrap\less\dropdowns.less" />
-    <Content Include="Content\libs\bootstrap\less\forms.less" />
-    <Content Include="Content\libs\bootstrap\less\glyphicons.less" />
-    <Content Include="Content\libs\bootstrap\less\grid.less" />
-    <Content Include="Content\libs\bootstrap\less\input-groups.less" />
-    <Content Include="Content\libs\bootstrap\less\jumbotron.less" />
-    <Content Include="Content\libs\bootstrap\less\labels.less" />
-    <Content Include="Content\libs\bootstrap\less\list-group.less" />
-    <Content Include="Content\libs\bootstrap\less\media.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\alerts.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\background-variant.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\border-radius.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\buttons.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\center-block.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\clearfix.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\forms.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\gradients.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\grid-framework.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\grid.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\hide-text.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\image.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\labels.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\list-group.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\nav-divider.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\nav-vertical-align.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\opacity.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\pagination.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\panels.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\progress-bar.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\reset-filter.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\reset-text.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\resize.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\responsive-visibility.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\size.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\tab-focus.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\table-row.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\text-emphasis.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\text-overflow.less" />
-    <Content Include="Content\libs\bootstrap\less\mixins\vendor-prefixes.less" />
-    <Content Include="Content\libs\bootstrap\less\modals.less" />
-    <Content Include="Content\libs\bootstrap\less\navbar.less" />
-    <Content Include="Content\libs\bootstrap\less\navs.less" />
-    <Content Include="Content\libs\bootstrap\less\normalize.less" />
-    <Content Include="Content\libs\bootstrap\less\pager.less" />
-    <Content Include="Content\libs\bootstrap\less\pagination.less" />
-    <Content Include="Content\libs\bootstrap\less\panels.less" />
-    <Content Include="Content\libs\bootstrap\less\popovers.less" />
-    <Content Include="Content\libs\bootstrap\less\print.less" />
-    <Content Include="Content\libs\bootstrap\less\progress-bars.less" />
-    <Content Include="Content\libs\bootstrap\less\responsive-embed.less" />
-    <Content Include="Content\libs\bootstrap\less\responsive-utilities.less" />
-    <Content Include="Content\libs\bootstrap\less\scaffolding.less" />
-    <Content Include="Content\libs\bootstrap\less\tables.less" />
-    <Content Include="Content\libs\bootstrap\less\theme.less" />
-    <Content Include="Content\libs\bootstrap\less\thumbnails.less" />
-    <Content Include="Content\libs\bootstrap\less\tooltip.less" />
-    <Content Include="Content\libs\bootstrap\less\type.less" />
-    <Content Include="Content\libs\bootstrap\less\utilities.less" />
-    <Content Include="Content\libs\bootstrap\less\variables.less" />
-    <Content Include="Content\libs\bootstrap\less\wells.less" />
-    <Content Include="Content\libs\bootstrap\LICENSE" />
-    <Content Include="Content\libs\bootstrap\nuget\bootstrap.less.nuspec" />
-    <Content Include="Content\libs\bootstrap\nuget\bootstrap.nuspec" />
-    <Content Include="Content\libs\bootstrap\nuget\MyGet.ps1" />
-    <Content Include="Content\libs\bootstrap\package.json" />
-    <Content Include="Content\libs\bootstrap\README.md" />
     <Content Include="Content\libs\font-awesome\.bower.json" />
     <Content Include="Content\libs\font-awesome\.npmignore" />
     <Content Include="Content\libs\font-awesome\bower.json" />
@@ -566,6 +436,7 @@
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Bruger.cshtml" />
     <Content Include="Views\User\user.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -602,7 +473,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>16075</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3000/</IISUrl>
+          <IISUrl>http://localhost:3001/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

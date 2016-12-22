@@ -46,7 +46,7 @@ gulp.task("compileJs", function () {
 
 gulp.task("browserSync", function () {
     browsersync.init({
-        proxy: "http://localhost:3000/" //Skift til port i Visual studio server!
+        proxy: "http://localhost:3001/" //Skift til port i Visual studio server!
     })
 });
 
