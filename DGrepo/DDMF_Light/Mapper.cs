@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 
 
-namespace REPO_NAMESPACE
+namespace DGrepo
 {
    public class Mapper<T> where T : new()
     {

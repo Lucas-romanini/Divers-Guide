@@ -43,6 +43,14 @@
     <Compile Include="DDMF_Light\AutoFac.cs" />
     <Compile Include="DDMF_Light\Conn.cs" />
     <Compile Include="DDMF_Light\Mapper.cs" />
+    <Compile Include="Factories\CategoriFac.cs" />
+    <Compile Include="Factories\CommentsFac.cs" />
+    <Compile Include="Factories\ContactFac.cs" />
+    <Compile Include="Factories\LawsFac.cs" />
+    <Compile Include="Factories\LevelFac.cs" />
+    <Compile Include="Factories\SlaebeStederFac.cs" />
+    <Compile Include="Factories\SpotsFac.cs" />
+    <Compile Include="Factories\UsersFac.cs" />
     <Compile Include="Models\Categori.cs" />
     <Compile Include="Models\Comments.cs" />
     <Compile Include="Models\Contact.cs" />
@@ -52,10 +60,11 @@
     <Compile Include="Models\SlaebeSteder.cs" />
     <Compile Include="Models\Spots.cs" />
     <Compile Include="Models\Users.cs" />
+    <Compile Include="Models\ViewModels\brugerVM.cs" />
+    <Compile Include="Models\ViewModels\spotsVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Factories\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

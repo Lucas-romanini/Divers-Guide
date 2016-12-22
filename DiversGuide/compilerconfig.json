@@ -14,5 +14,9 @@
   {
     "outputFile": "Content/Style/Footer.css",
     "inputFile": "Content/Style/Footer.less"
+  },
+  {
+    "outputFile": "Content/Style/Index.css",
+    "inputFile": "Content/Style/Index.less"
   }
 ]
