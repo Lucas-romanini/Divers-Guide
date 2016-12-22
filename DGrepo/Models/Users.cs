@@ -16,5 +16,6 @@ namespace DGrepo
         public string ProfilePic { get; set; }
         public string About { get; set; }
         public int TLF { get; set; }
+        public string Transfer { get; set; }
     }
 }
