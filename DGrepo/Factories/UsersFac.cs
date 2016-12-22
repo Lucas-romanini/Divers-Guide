@@ -8,5 +8,16 @@ namespace DGrepo
 {
    public class UsersFac : AutoFac<Users>
     {
+        public bool UserExist(string email)
+        {
+            if (GetBy("Email", email).Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
