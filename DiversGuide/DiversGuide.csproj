@@ -160,6 +160,7 @@
     <Content Include="Content\dist\style.css" />
     <Content Include="Content\dist\style.min.css" />
     <Content Include="Content\IMG\facebook_no_profile_pic2-jpg.jpg" />
+    <Content Include="Content\IMG\forside-ny.jpg" />
     <Content Include="Content\IMG\Kontakt-img1.jpg" />
     <Content Include="Content\IMG\Kontakt-img2.jpg" />
     <Content Include="Content\IMG\logo.png" />
@@ -309,6 +310,12 @@
     <Content Include="Content\Style\Header.min.css">
       <DependentUpon>Header.css</DependentUpon>
     </Content>
+    <Content Include="Content\Style\Index.css">
+      <DependentUpon>Index.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Index.min.css">
+      <DependentUpon>Index.css</DependentUpon>
+    </Content>
     <Content Include="Content\Style\Kontakt.css">
       <DependentUpon>Kontakt.less</DependentUpon>
     </Content>
@@ -333,6 +340,7 @@
     <Content Include="Content\Style\Kontakt.less" />
     <Content Include="Content\Style\Header.less" />
     <Content Include="Content\Style\Footer.less" />
+    <Content Include="Content\Style\Index.less" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
