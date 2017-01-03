@@ -1,0 +1,39 @@
+﻿@using DGrepo
+@Model DGrepo.Users
+@{
+    ViewBag.Title = "user";
+}
+
+<h2>user</h2>
+
+<container class="Bruger-wrapper">
+    <content class="row">
+        <div class="offset-by-two five columns">
+            <h1>
+                User: Get.Name.By.ID
+            </h1>
+        </div>
+
+    </content>
+    <div class="row">
+        <hr class="offset-by-two eight columns" />
+    </div>
+    <content class="row">
+        <form class="offset-by-two five columns">
+            Navn:<br />
+            <input type="text" name="Name" value="@Model.Name" /><br />
+            Email: <br />
+            <input type="text" name="Email"value="@Model.Email" /><br />
+            Tlf:<br />
+            <input type="text" name="tlf" value="@Model.TLF" /><br />
+            About:<br />
+            <textarea name="About">@Model.About</textarea><br />
+            <input type="submit" />
+        </form>
+        <div class="offset-by-one four columns">
+            <p>Profil Pic:</p>
+            img.get.by.id<br />
+            <img src="Content/IMG/facebook_no_profile_pic2-jpg.jpg" />
+        </div>
+    </content>
+</container>
