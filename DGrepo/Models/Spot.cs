@@ -16,7 +16,7 @@ namespace DGrepo
         public string DybteBund { get; set; }
         public string Billede { get; set; }
         public string DybteTop { get; set; }
-        public int PosType { get; set; }
+        public int SpotType { get; set; }
         public int Type { get; set; }
         public string Afstand { get; set; }
         public int Skibe { get; set; }
