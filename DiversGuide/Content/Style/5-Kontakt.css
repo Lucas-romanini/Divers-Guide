@@ -1,11 +1,4 @@
-﻿* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #9dd9ff;
-  font-family: Verdana,Calibri;
-}
-/*▼▼Kontakt▼▼*/
+﻿/*▼▼Kontakt CSS▼▼*/
 .kontakt {
   margin-top: 100px;
 }
@@ -27,4 +20,4 @@ body {
 .kontakt img:first-of-type {
   margin-bottom: 200px;
 }
-/*▲▲Kontakt▲▲*/
+/*▲▲Kontakt CSS▲▲*/

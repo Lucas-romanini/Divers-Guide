@@ -1,22 +1,19 @@
 ﻿@import "Variables";
 
-body {
-    font-family:Verdana;
-    background-color:@BG-color;
-}
+/*▼▼Header▼▼*/
 header{
     background-color:@Header-bg;
     div + div{
         margin-top:43px;
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:27px;
-         a{
-        color:#ff9600;
+        a{
+        color:@Header-text-color;
         font-size:27px;
         text-decoration:none;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
         text-decoration:underline;
     }
          
@@ -37,17 +34,12 @@ header{
        margin-left:5%;
    }
 }
-.float-right{
-    float:right;
-}
+
 .boxsizing{
     box-sizing:border-box;
 }
-.display{
-    display:inline-block;
-}
 .dropbtn {
-    background-color: #0072bc;
+    background-color:@Header-bg;
     color: white;
     padding: 13px;
     font-size: 16px;
@@ -55,7 +47,7 @@ header{
     cursor: pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #0072bc;
+    background-color: @Header-bg;
 }
 .dropdown {
     position: relative;
@@ -75,17 +67,8 @@ header{
 }
 .dropdown a:hover {background-color: #f1f1f1}
 .show {display:block;}
-.displ{
-    display:none;
-}
-.Bruger-wrapper hr{
-    
-    border:solid 1px black;
-}
-.facehead{
-    width:50px;
-    height:50px;
-}
+
+
 
 @media all and (min-width: 550px) and (max-width:850px) {
     /*#region index */
@@ -101,10 +84,6 @@ header{
         }
 }
 
-.bruger{
-    margin-top:20px;
-}
-/*#endregion */
 /* Larger than tablet */
 @media all and (min-width: 851px) and (max-width:1200px) {
     .displ{
@@ -137,14 +116,14 @@ header{
      header{
     background-color:@Header-bg;
     div + div{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:20px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:20px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -166,14 +145,14 @@ header{
      header{
     background-color:@Header-bg;
     div + div{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:16px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:16px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -196,14 +175,14 @@ header{
     background-color:@Header-bg;
     div + div{
         margin-top:33px;
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:18px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:18px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -228,14 +207,14 @@ header{
     background-color:@Header-bg;
     div + div{
         margin-top:33px;
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:20px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:20px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -260,14 +239,14 @@ header{
     background-color:@Header-bg;
     div + div{
         margin-top:43px;
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:22px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:22px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -291,14 +270,14 @@ header{
     background-color:@Header-bg ;
     div + div{
         margin-top:43px;
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:27px;
          a{
-        color:#ff9600;
+        color:@Header-text-color;
         font-size:27px;
     } 
          a:hover{
-        color:#ff9600;
+        color:@Header-text-color;
     }
          
     }
@@ -317,5 +296,4 @@ header{
    
 }
 }
-
-
+/*▲▲Header▲▲*/

@@ -292,36 +292,25 @@
     <Content Include="Content\libs\skeleton\images\favicon.png" />
     <Content Include="Content\libs\skeleton\index.html" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\Style\Bruger.css">
-      <DependentUpon>Bruger.less</DependentUpon>
+    <Content Include="Content\Style\1-MainStyle.css">
+      <DependentUpon>1-MainStyle.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Bruger.min.css">
-      <DependentUpon>Bruger.css</DependentUpon>
+    <Content Include="Content\Style\2-Header.css">
+      <DependentUpon>2-Header.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Footer.css">
-      <DependentUpon>Footer.less</DependentUpon>
+    <Content Include="Content\Style\3-Index.css">
+      <DependentUpon>3-Index.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Footer.min.css">
-      <DependentUpon>Footer.css</DependentUpon>
+    <Content Include="Content\Style\4-Bruger.css">
+      <DependentUpon>4-Bruger.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Header.css">
-      <DependentUpon>Header.less</DependentUpon>
+    <Content Include="Content\Style\5-Kontakt.css">
+      <DependentUpon>5-Kontakt.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Header.min.css">
-      <DependentUpon>Header.css</DependentUpon>
+    <Content Include="Content\Style\6-Footer.css">
+      <DependentUpon>6-Footer.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\Index.css">
-      <DependentUpon>Index.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Style\Index.min.css">
-      <DependentUpon>Index.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Style\Kontakt.css">
-      <DependentUpon>Kontakt.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Style\Kontakt.min.css">
-      <DependentUpon>Kontakt.css</DependentUpon>
-    </Content>
+    <Content Include="Content\Style\-TableOfContent.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
@@ -332,15 +321,17 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="Content\Style\Bruger.less" />
+    <Content Include="Content\Style\4-Bruger.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="Content\Style\Kontakt.less" />
-    <Content Include="Content\Style\Header.less" />
-    <Content Include="Content\Style\Footer.less" />
-    <Content Include="Content\Style\Index.less" />
+    <Content Include="Content\Style\5-Kontakt.less" />
+    <Content Include="Content\Style\2-Header.less" />
+    <Content Include="Content\Style\6-Footer.less" />
+    <Content Include="Content\Style\3-Index.less" />
+    <Content Include="Content\Style\Variables.less" />
+    <Content Include="Content\Style\1-MainStyle.less" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
