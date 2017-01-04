@@ -6,7 +6,8 @@ function initMap() {
     var spot2 = { lat: 56.13330691237569, lng: 10.755615234375 };
     map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 56.13330691237569, lng: 10.755615234375 },
-        zoom: 13,
+        zoom: 9,
+        scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: 'roadmap'
     });
