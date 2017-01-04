@@ -8,9 +8,10 @@ namespace DGrepo
 {
    public class spotsVM
     {
-        public List<Spots> spots { get; set; }
+        public List<Spot> spot { get; set; }
         public List<Categori> categori { get; set; }
         public List<rating> rating { get; set; }
         public List<SlaebeSteder> slaebesteder { get; set; }
+        public List<SpotType> spottype { get; set; }
     }
 }

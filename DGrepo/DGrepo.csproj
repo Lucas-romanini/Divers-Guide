@@ -49,7 +49,8 @@
     <Compile Include="Factories\LawsFac.cs" />
     <Compile Include="Factories\LevelFac.cs" />
     <Compile Include="Factories\SlaebeStederFac.cs" />
-    <Compile Include="Factories\SpotsFac.cs" />
+    <Compile Include="Factories\SpotFac.cs" />
+    <Compile Include="Factories\SpotTypeFac.cs" />
     <Compile Include="Factories\UsersFac.cs" />
     <Compile Include="Models\Categori.cs" />
     <Compile Include="Models\Comments.cs" />
@@ -58,7 +59,8 @@
     <Compile Include="Models\Level.cs" />
     <Compile Include="Models\rating.cs" />
     <Compile Include="Models\SlaebeSteder.cs" />
-    <Compile Include="Models\Spots.cs" />
+    <Compile Include="Models\Spot.cs" />
+    <Compile Include="Models\SpotType.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\ViewModels\brugerVM.cs" />
     <Compile Include="Models\ViewModels\spotsVM.cs" />

@@ -2,6 +2,18 @@
 function initMap() {
     // Create the map with no initial style specified.
     // It therefore has default styling.
+    
+    var SpotType = [
+
+    ]
+    
+        var slaebeSteder = [
+            
+
+    ]
+    var Spot = [
+
+    ]
     var spot = { lat: -25.363, lng: 131.044 };
     var spot2 = { lat: 56.13330691237569, lng: 10.755615234375 };
     map = new google.maps.Map(document.getElementById('map'), {
