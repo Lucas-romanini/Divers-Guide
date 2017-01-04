@@ -13,9 +13,9 @@ var gulp = require('gulp'),
 
 gulp.task("compileCss", function () {
     gulp.src([
-        "Content/libs/bootstrap/dist/css/bootstrap.css",
-        "Content/libs/font-awesome/css/font-awesome.css",
-        "Content/libs/izitoast/dist/css/iziToast.css",
+        //"Content/libs/bootstrap/dist/css/bootstrap.css",
+        //"Content/libs/font-awesome/css/font-awesome.css",
+        //"Content/libs/izitoast/dist/css/iziToast.css",
         "Content/style/**/*.css"
     ])
     .pipe(concat("style.css"))

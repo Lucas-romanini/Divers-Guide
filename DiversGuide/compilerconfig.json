@@ -18,5 +18,33 @@
   {
     "outputFile": "Content/Style/Index.css",
     "inputFile": "Content/Style/Index.less"
+  },
+  {
+    "outputFile": "Content/Style/MainStyle.css",
+    "inputFile": "Content/Style/MainStyle.less"
+  },
+  {
+    "outputFile": "Content/Style/6-Footer.css",
+    "inputFile": "Content/Style/6-Footer.less"
+  },
+  {
+    "outputFile": "Content/Style/1-MainStyle.css",
+    "inputFile": "Content/Style/1-MainStyle.less"
+  },
+  {
+    "outputFile": "Content/Style/2-Header.css",
+    "inputFile": "Content/Style/2-Header.less"
+  },
+  {
+    "outputFile": "Content/Style/3-Index.css",
+    "inputFile": "Content/Style/3-Index.less"
+  },
+  {
+    "outputFile": "Content/Style/5-Kontakt.css",
+    "inputFile": "Content/Style/5-Kontakt.less"
+  },
+  {
+    "outputFile": "Content/Style/4-Bruger.css",
+    "inputFile": "Content/Style/4-Bruger.less"
   }
 ]
