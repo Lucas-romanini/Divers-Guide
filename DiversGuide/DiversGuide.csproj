@@ -324,9 +324,6 @@
     <Content Include="Content\Style\2-Header.css">
       <DependentUpon>2-Header.less</DependentUpon>
     </Content>
-    <Content Include="Content\Style\2-Header.min.css">
-      <DependentUpon>2-Header.css</DependentUpon>
-    </Content>
     <Content Include="Content\Style\3-Index.css">
       <DependentUpon>3-Index.less</DependentUpon>
     </Content>
