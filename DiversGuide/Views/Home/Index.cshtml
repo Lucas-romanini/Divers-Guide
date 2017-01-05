@@ -1,4 +1,5 @@
-﻿@using DGrepo  
+﻿@using DGrepo
+ @model spotsVM
 @{
     ViewBag.Title = "Index";
 }
@@ -27,41 +28,7 @@
 <script>
     var map;
     function initMap() {
-        // Create the map with no initial style specified.
-        // It therefore has default styling.
 
-        @foreach(var item in Model.SpotsVM)
-        {
-            <text>
-        var markerlatLng = new google.maps.LatLng(@(Model.Spot.Lati), @(Model.Spot.Long));
-        var navn = '@(Model.Spot.Navn)';
-        var beskrivelse = '@(Model.Spot.Beskrivelse)';
-        var billede = '@(Model.Spot.Billede)';
-        var rating = '@(Model.rating.Rating)';
-        var contentString = '<h3>' + navn + '</h3>' + '<br />' + billede + '<br />' + '<p>' + beskrivelse + '</p>' + '<br />' + rating
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position: latLng,
-            title: title,
-            map: map,
-            
-        });
-
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
-        });
-
-        
-        
-            </text>
-        }
-
-            var spot = { lat: -25.363, lng: 131.044 };
-        var spot2 = { lat: 56.13330691237569, lng: 10.755615234375 };
         map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 56.13330691237569, lng: 10.755615234375 },
             zoom: 9,
@@ -69,16 +36,8 @@
             mapTypeControl: false,
             mapTypeId: 'roadmap'
         });
-        var marker = new google.maps.Marker({
-            position: spot,
 
-            map: map
-        });
-        var marker = new google.maps.Marker({
-            position: spot2,
 
-            map: map
-        });
         // Add a style-selector control to the map.
         var styleControl = document.getElementById('style-selector-control');
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
@@ -91,7 +50,39 @@
         styleSelector.addEventListener('change', function () {
             map.setOptions({ styles: styles[styleSelector.value] });
         });
+
+  @foreach(var item in Model.spot)
+    {
+        <text>
+    var markerlatLng = new google.maps.LatLng(@(item.Lati), @(item.Long));
+        var navn = '@(item.Navn)';
+        var beskrivelse = '@(item.Beskrivelse)';
+        var billede = '@(item.Billede)';
+
+        var contentString = '<h3>' + navn + '</h3>' + '<br />' + billede + '<br />' + '<p>' + beskrivelse + '</p>'
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: markerlatLng,
+            
+            map: map
+
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+
+
+
+        </text>
     }
+
+    }
+
 
 
     var styles = {

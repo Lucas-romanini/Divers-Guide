@@ -26,9 +26,14 @@ namespace DiversGuide.Controllers
         Categori cat = new Categori();
         spotsVM svm = new spotsVM();
         brugerVM bvm = new brugerVM();
+        SpotFac sf = new SpotFac();
+        RatingFac rf = new RatingFac();
         public ActionResult Index()
         {
-            return View();
+            svm.spot = sf.GetAll();
+            svm.rating = rf.GetAll();
+
+            return View(svm);
         }
 
         public ActionResult Kontakt()

@@ -48,6 +48,7 @@
     <Compile Include="Factories\ContactFac.cs" />
     <Compile Include="Factories\LawsFac.cs" />
     <Compile Include="Factories\LevelFac.cs" />
+    <Compile Include="Factories\RatingFac.cs" />
     <Compile Include="Factories\SlaebeStederFac.cs" />
     <Compile Include="Factories\SpotFac.cs" />
     <Compile Include="Factories\SpotTypeFac.cs" />
