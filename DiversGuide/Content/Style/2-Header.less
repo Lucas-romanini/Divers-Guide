@@ -111,8 +111,22 @@ header{
       
 }
 }
+@media (max-width: 400px) {
+    .menu{
+    float:right;
+    margin-right:40px;
+    font-size:10px;
+}
+    .dropdown-content a{
+        font-size:9px;
+        
+    }
+    .dropdown-content{
+        min-width:50px;
+    }
+    }
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 401px) {
      header{
     background-color:@Header-bg;
     div + div{
@@ -125,7 +139,11 @@ header{
          a:hover{
         color:@Header-text-color;
     }
-         
+         }
+      .menu{
+    float:right;
+    margin-right:89px;
+}       
     }
    div + div + div{
        color:black;
