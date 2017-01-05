@@ -135,14 +135,18 @@ header .logo {
   header div + div a:hover {
     color: #ff9600;
   }
-  header div + div + div {
+  header .menu {
+    float: right;
+    margin-right: 89px;
+  }
+  div + div + div {
     color: black;
   }
-  header div + div + div a {
+  div + div + div a {
     color: black;
     font-size: 18px;
   }
-  header div + div + div a:hover {
+  div + div + div a:hover {
     color: black;
   }
 }
