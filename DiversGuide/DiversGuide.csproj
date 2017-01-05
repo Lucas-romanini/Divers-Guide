@@ -192,6 +192,7 @@
     <Content Include="Content\IMG\logo.png" />
     <Content Include="Content\IMG\logomobil.png" />
     <Content Include="Content\JS\JavaScriptMap.js" />
+    <Content Include="Content\JS\mapTest.js" />
     <Content Include="Content\libs\font-awesome\.gitignore" />
     <Content Include="Content\libs\font-awesome\css\font-awesome.css" />
     <Content Include="Content\libs\font-awesome\css\font-awesome.min.css" />

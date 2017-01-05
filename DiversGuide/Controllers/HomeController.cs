@@ -16,7 +16,7 @@ namespace DiversGuide.Controllers
 
         Users u = new Users();
         SpotType st = new SpotType();
-        Spot s = new Spot();
+        Spots s = new Spots();
         SlaebeSteder ss = new SlaebeSteder();
         rating r = new rating();
         Level le = new Level();
@@ -26,7 +26,7 @@ namespace DiversGuide.Controllers
         Categori cat = new Categori();
         spotsVM svm = new spotsVM();
         brugerVM bvm = new brugerVM();
-        SpotFac sf = new SpotFac();
+        SpotsFac sf = new SpotsFac();
         RatingFac rf = new RatingFac();
         SpotsFac ssf = new SpotsFac();
         public ActionResult Index()

@@ -1,8 +1,10 @@
 ﻿@using DGrepo
- @model spotsVM
+@model spotsVM
 @{
     ViewBag.Title = "Index";
 }
+
+
 
 <section class="container forside">
     <div class="row">
@@ -16,19 +18,35 @@
         </div>
     </row>
 </section>
-<div id="style-selector-control" class="map-control">
+@*<div id="style-selector-control" class="map-control">
     <select id="style-selector" class="selector-control">
         <option value="default">Default</option>
         <option value="retro" >Retro</option>
         <option value="light" selected="selected">Light blue</option>
         <option value="hiding">Hide features</option>
     </select>
-</div>
-<div id="map"></div>
-<script>
-    var map;
-    function initMap() {
+</div>*@
 
+
+
+<div id="map"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlIkE6_rDBAKkBIoAeCwR_gMox5h-IB4&callback=initMap"
+        async defer></script>
+
+@section mapJS{
+<script>
+    var locations = [
+          @foreach (var item in Model.spots)
+          {
+               @:["<h3> @item.Name</h3><br /> <img src='/Content/IMG/@item.Billede'><br /><p>@item.Beskrivelse</p>", @item.Lati, @item.Long],
+
+          }
+    ];
+
+    function initMap() {
+        var infowindow = new google.maps.InfoWindow(); /* SINGLE */
         map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 56.13330691237569, lng: 10.755615234375 },
             zoom: 9,
@@ -37,72 +55,30 @@
             mapTypeId: 'roadmap'
         });
 
+        function placeMarker(loc) {
+            var latLng = new google.maps.LatLng(loc[1], loc[2]);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.close(); // Close previously opened infowindow
+                infowindow.setContent("<div id='infowindow'>" + loc[0] + "</div>");
+                infowindow.open(map, marker);
+            });
+        }
 
-        // Add a style-selector control to the map.
-        var styleControl = document.getElementById('style-selector-control');
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
-
-        // Set the map's style to the initial value of the selector.
-        var styleSelector = document.getElementById('style-selector');
-        map.setOptions({ styles: styles[styleSelector.value] });
-
-        // Apply new JSON when the user selects a different style.
-        styleSelector.addEventListener('change', function () {
-            map.setOptions({ styles: styles[styleSelector.value] });
-        });
-
-  @foreach(var item in Model.spots)
-    {
-        <text>
-    var markerlatLng = new google.maps.LatLng(@(item.Lati), @(item.Long));
-        var navn = '@(item.Name)';
-        var beskrivelse = '@(item.Beskrivelse)';
-        var billede = '@(item.Billede)';
-
-        var contentString = '<h3>' + navn + '</h3>' + '<br />' + billede + '<br />' + '<p>' + beskrivelse + '</p>'
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position: markerlatLng,
-            
-            map: map
-
-        });
-
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
-        });
-
-
-
-        </text>
-    }
+        // ITERATE ALL LOCATIONS
+        // Don't create functions inside for loops
+        // therefore refer to a previously created function
+        // and pass your iterating location as argument value:
+        for (var i = 0; i < locations.length; i++) {
+            placeMarker(locations[i]);
+        }
 
     }
+    google.maps.event.addDomListener(window, 'load', initGoogleMap);
 
 
-
-    var styles = {
-        default: null,
-
-        retro: [{ "featureType": "water", "stylers": [{ "saturation": 43 }, { "lightness": -11 }, { "hue": "#0088ff" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": 99 }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }, { "lightness": 54 }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ece2d9" }] }, { "featureType": "poi.park", "elementType": "geometry.fill", "stylers": [{ "color": "#ccdca1" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#767676" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#b8cb93" }] }, { "featureType": "poi.park", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.sports_complex", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.medical", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.business", "stylers": [{ "visibility": "simplified" }] }],
-        light: [{ "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "on" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#74abc3" }] }],
-        hiding: [
-          {
-              featureType: 'poi.business',
-              stylers: [{ visibility: 'off' }]
-          },
-          {
-              featureType: 'transit',
-              elementType: 'labels.icon',
-              stylers: [{ visibility: 'off' }]
-          }
-        ]
-    };
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw18Gwaobb2MNhMcbqOtGYodUEhdbBRZc&callback=initMap"
-        async defer></script>
-
+}
