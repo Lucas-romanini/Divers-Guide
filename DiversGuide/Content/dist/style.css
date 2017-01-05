@@ -37,6 +37,80 @@ body {
 }
 /*▲▲Main Styles▲▲*/
 /*▼▼Header▼▼*/
+        #primary_nav_wrap
+{
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	text-decoration:none;
+	line-height:32px;
+	padding:0 15px;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+    
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    
+}
+
+#primary_nav_wrap ul li:hover
+{
+    text-decoration:underline;
+}
+
+#primary_nav_wrap ul ul
+{
+    
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+    background-color:#0072bc;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
 header {
   background-color: #0072bc;
 }
@@ -118,6 +192,13 @@ header .logo {
     margin-left: auto;
     margin-right: auto;
   }
+  #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
 }
 /* Larger than tablet */
 @media all and (min-width: 851px) and (max-width: 1200px) {
@@ -143,6 +224,13 @@ header .logo {
   .disnone {
     display: none;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
 }
 @media (max-width: 400px) {
   .menu {
@@ -156,6 +244,13 @@ header .logo {
   .dropdown-content {
     min-width: 50px;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:70px
+}
 }
 /* Larger than mobile */
 @media (min-width: 401px) {
@@ -187,6 +282,13 @@ header .logo {
   header div + div + div a:hover {
     color: black;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:50px
+}
 }
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -214,6 +316,13 @@ header .logo {
   header div + div + div a:hover {
     color: black;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:80px
+}
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -244,6 +353,13 @@ header .logo {
   header div + div + div a:hover {
     color: black;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
@@ -274,6 +390,13 @@ header .logo {
   header div + div + div a:hover {
     color: black;
   }
+    #primary_nav_wrap ul ul li
+{
+    background-color:white;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
 }
 /* Larger than Desktop HD */
 @media (min-width: 1250px) {
@@ -304,6 +427,13 @@ header .logo {
   header div + div + div a:hover {
     color: black;
   }
+      #primary_nav_wrap ul ul li
+{
+    background-color:#0072bc;
+    border:black 1px solid;
+	float:none;
+	width:100px
+}
 }
 @media (min-width: 1300px) {
   header {

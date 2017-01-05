@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -48,14 +48,26 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header class="container">
-        <nav class="row">
+        <nav id="primary_nav_wrap" class="row">
             <div class="three columns disnone">
                 <img src="~/Content/IMG/logo.png" alt="Logo" class="logo u-max-full-width" />
             </div>
             <div class="six columns disnone">
-                <a href="/Home/Index/">Home</a> -
-                <a href="#">Lovgivning</a> -
-                <a href="/Home/Kontakt/">Kontakt</a>
+                <ul>
+                    <li class="current-menu-item"><a href="/Home/Index/">Home</a></li>
+                    <li>
+                        <a href="#">Lovgivning</a>
+                        <ul>
+                            <li><a href="#">lov 1</a></li>
+                            <li><a href="#">lov 2</a></li>
+                            </ul>
+                            </li>
+                    <li class="current-menu-item"><a href="/Home/Kontakt/">kontakt</a></li>
+                    </ul>
+               
+                            @*<a href="/Home/Index/">Home</a> -
+                            <a href="#">Lovgivning</a> -
+                            <a href="/Home/Kontakt/">Kontakt</a>*@
             </div>
             <div class="three columns disnone">
                 <a href="#">bruger</a> - <a href="#">log ud</a>
@@ -68,11 +80,19 @@
                     <div id="myDropdown" class="dropdown-content">
                         <a href="#home">Home</a>
                         <a href="#about">Kontakt</a>
-                        <a href="#contact">Lovgivning</a>
+                        <ul>
+                            <li>
+                                <a href="#contact">Lovgivning</a>
+                                <ul>
+                                    <li><a href="#">lov 1</a></li>
+                                    <li><a href="#">lov 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                <script>
+            <script>
                 /* When the user clicks on the button,
                 toggle between hiding and showing the dropdown content */
                 function myFunction() {
@@ -93,8 +113,8 @@
                         }
                     }
                 }
-                </script>
-</nav>
+            </script>
+        </nav>
     </header>
     @RenderBody()
     <footer class="container">
