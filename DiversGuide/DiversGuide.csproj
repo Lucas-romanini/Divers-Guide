@@ -160,6 +160,32 @@
     <Content Include="Content\dist\style.css" />
     <Content Include="Content\dist\style.min.css" />
     <Content Include="Content\IMG\facebook_no_profile_pic2-jpg.jpg" />
+    <Content Include="Content\IMG\Favicon\android-icon-144x144.png" />
+    <Content Include="Content\IMG\Favicon\android-icon-192x192.png" />
+    <Content Include="Content\IMG\Favicon\android-icon-36x36.png" />
+    <Content Include="Content\IMG\Favicon\android-icon-48x48.png" />
+    <Content Include="Content\IMG\Favicon\android-icon-72x72.png" />
+    <Content Include="Content\IMG\Favicon\android-icon-96x96.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-114x114.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-120x120.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-144x144.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-152x152.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-180x180.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-57x57.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-60x60.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-72x72.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-76x76.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\IMG\Favicon\apple-icon.png" />
+    <Content Include="Content\IMG\Favicon\browserconfig.xml" />
+    <Content Include="Content\IMG\Favicon\favicon-16x16.png" />
+    <Content Include="Content\IMG\Favicon\favicon-32x32.png" />
+    <Content Include="Content\IMG\Favicon\favicon-96x96.png" />
+    <Content Include="Content\IMG\Favicon\favicon.ico" />
+    <Content Include="Content\IMG\Favicon\ms-icon-144x144.png" />
+    <Content Include="Content\IMG\Favicon\ms-icon-150x150.png" />
+    <Content Include="Content\IMG\Favicon\ms-icon-310x310.png" />
+    <Content Include="Content\IMG\Favicon\ms-icon-70x70.png" />
     <Content Include="Content\IMG\forside-ny.jpg" />
     <Content Include="Content\IMG\Kontakt-img1.jpg" />
     <Content Include="Content\IMG\Kontakt-img2.jpg" />
@@ -332,6 +358,7 @@
     <Content Include="Content\Style\3-Index.less" />
     <Content Include="Content\Style\Variables.less" />
     <Content Include="Content\Style\1-MainStyle.less" />
+    <Content Include="Content\IMG\Favicon\manifest.json" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -340,9 +367,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Content\DDMF_Light\AutoFac.cs" />
-    <Compile Include="Content\DDMF_Light\Conn.cs" />
-    <Compile Include="Content\DDMF_Light\Mapper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">

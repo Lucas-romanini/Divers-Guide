@@ -106,8 +106,21 @@ header .logo {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  .menu {
+    float: right;
+    margin-right: 40px;
+    font-size: 10px;
+  }
+  .dropdown-content a {
+    font-size: 9px;
+  }
+  .dropdown-content {
+    min-width: 50px;
+  }
+}
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 401px) {
   header {
     background-color: #0072bc;
   }
