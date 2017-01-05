@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace DGrepo
 {
-   public class spotsVM
+   public class SpotsFac : AutoFac<Spots>
     {
-        public List<Spots> spots { get; set; }
-        public List<rating> rating { get; set; }
-        
     }
 }

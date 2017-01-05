@@ -51,11 +51,11 @@
             map.setOptions({ styles: styles[styleSelector.value] });
         });
 
-  @foreach(var item in Model.spot)
+  @foreach(var item in Model.spots)
     {
         <text>
     var markerlatLng = new google.maps.LatLng(@(item.Lati), @(item.Long));
-        var navn = '@(item.Navn)';
+        var navn = '@(item.Name)';
         var beskrivelse = '@(item.Beskrivelse)';
         var billede = '@(item.Billede)';
 

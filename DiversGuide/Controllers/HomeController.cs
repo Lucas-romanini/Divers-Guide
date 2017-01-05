@@ -28,9 +28,10 @@ namespace DiversGuide.Controllers
         brugerVM bvm = new brugerVM();
         SpotFac sf = new SpotFac();
         RatingFac rf = new RatingFac();
+        SpotsFac ssf = new SpotsFac();
         public ActionResult Index()
         {
-            svm.spot = sf.GetAll();
+            svm.spots = ssf.GetAll();
             svm.rating = rf.GetAll();
 
             return View(svm);
