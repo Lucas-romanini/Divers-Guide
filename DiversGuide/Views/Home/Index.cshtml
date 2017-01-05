@@ -30,23 +30,37 @@
         // Create the map with no initial style specified.
         // It therefore has default styling.
 
-        @*var SpotType = [
-            
-                @foreach(SpotType st in Model.spotsVM)
-                {
-                    
-                }
-            
-        ]
+        @foreach(var item in Model.SpotsVM)
+        {
+            <text>
+        var markerlatLng = new google.maps.LatLng(@(Model.Spot.Lati), @(Model.Spot.Long));
+        var navn = '@(Model.Spot.Navn)';
+        var beskrivelse = '@(Model.Spot.Beskrivelse)';
+        var billede = '@(Model.Spot.Billede)';
+        var rating = '@(Model.rating.Rating)';
+        var contentString = '<h3>' + navn + '</h3>' + '<br />' + billede + '<br />' + '<p>' + beskrivelse + '</p>' + '<br />' + rating
 
-      
-        var Spot = [
-            @foreach(Spot s in Model.spotsVM)
-            {
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
 
-            }
-        ]*@
-        var spot = { lat: -25.363, lng: 131.044 };
+        var marker = new google.maps.Marker({
+            position: latLng,
+            title: title,
+            map: map,
+            
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+
+        
+        
+            </text>
+        }
+
+            var spot = { lat: -25.363, lng: 131.044 };
         var spot2 = { lat: 56.13330691237569, lng: 10.755615234375 };
         map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 56.13330691237569, lng: 10.755615234375 },
