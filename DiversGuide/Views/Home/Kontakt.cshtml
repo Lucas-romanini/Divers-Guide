@@ -1,4 +1,4 @@
-﻿
+﻿@Model Contact
 @{
     ViewBag.Title = "Kontakt";
 }
@@ -7,7 +7,18 @@
     <div class="row">
         <section class="offset-by-two four columns">
             <h1>Kontakt</h1>
-            <div>
+            @foreach (var item in Model)
+            {
+                <p>@Model.Name</p>
+                <p>Html.raw(@Model.Adress)</p>
+                <p>@Model.TLF</p>
+                <p>@Model.Email</p>
+                <a href="@Model.website">@Model.website</a>
+
+
+
+            }
+            @*<div>
                 <p>Henrik Obsen (Obsen)</p>
                 <p>Svinget 2</p>
                 <p>8570 Lyngby J</p>
@@ -33,8 +44,9 @@
                 <p>Tlf. 2759 6960</p>
                 <p>c-box@hotmail.dk</p>
                 <a href="http://plask-dyk.dk/">www.plask-dyk.dk</a>
-            </div>
+            </div>*@
         </section>
+
         <section class="four columns disnone">
             <img src="~/Content/IMG/Kontakt-img2.jpg" class="u-max-full-width" />
             <img src="~/Content/IMG/Kontakt-img1.jpg" class="u-max-full-width" />
