@@ -18,24 +18,28 @@
         </div>
     </row>
 </section>
-@*<div id="style-selector-control" class="map-control">
-    <select id="style-selector" class="selector-control">
-        <option value="default">Default</option>
-        <option value="retro" >Retro</option>
-        <option value="light" selected="selected">Light blue</option>
-        <option value="hiding">Hide features</option>
-    </select>
-</div>*@
+<section class="container">
+    <div id="style-selector-control" class="map-control">
+        <select id="style-selector" class="selector-control">
+            <option value="default">Default</option>
+            <option value="retro">Retro</option>
+            <option value="light">Light blue</option>
+            <option value="street" selected="selected">Street</option>
+            <option value="hiding">Hide features</option>
+        </select>
+    </div>
 
 
 
-<div id="map"></div>
+    <div id="map"></div>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlIkE6_rDBAKkBIoAeCwR_gMox5h-IB4&callback=initMap"
-        async defer></script>
+    
 
-@section mapJS{
+    @section mapJS{
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlIkE6_rDBAKkBIoAeCwR_gMox5h-IB4&callback=initMap"
+            async defer></script>
+    </section>
 <script>
     var locations = [
           @foreach (var item in Model.spots)
@@ -53,12 +57,20 @@
             scrollwheel: false,
             mapTypeControl: false,
             mapTypeId: 'roadmap',
-            styles:
-            [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#e85113" }] }, { "featureType": "administrative", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }, { "weight": 6 }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "lightness": 20 }, { "color": "#efe9e4" }] }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#f0e4d3" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "poi", "elementType": "labels.text.fill", "stylers": [{ "hue": "#11ff00" }] }, { "featureType": "poi", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }, { "featureType": "poi", "elementType": "labels.icon", "stylers": [{ "hue": "#4cff00" }, { "saturation": 58 }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "lightness": -100 }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#efe9e4" }, { "lightness": -25 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#efe9e4" }, { "lightness": -40 }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#efe9e4" }, { "lightness": -10 }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "color": "#efe9e4" }, { "lightness": -20 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#19a0d8" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "lightness": -100 }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }]
-
-
-
         });
+
+        var styleControl = document.getElementById('style-selector-control');
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
+
+        // Set the map's style to the initial value of the selector.
+        var styleSelector = document.getElementById('style-selector');
+        map.setOptions({ styles: styles[styleSelector.value] });
+
+        // Apply new JSON when the user selects a different style.
+        styleSelector.addEventListener('change', function () {
+            map.setOptions({ styles: styles[styleSelector.value] });
+        });
+        
 
         function placeMarker(loc) {
             var latLng = new google.maps.LatLng(loc[1], loc[2]);
@@ -82,6 +94,25 @@
         }
         
     }
+    var styles = {
+        default: null,
+
+        retro: [{ "featureType": "water", "stylers": [{ "saturation": 43 }, { "lightness": -11 }, { "hue": "#0088ff" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": 99 }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }, { "lightness": 54 }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ece2d9" }] }, { "featureType": "poi.park", "elementType": "geometry.fill", "stylers": [{ "color": "#ccdca1" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#767676" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#b8cb93" }] }, { "featureType": "poi.park", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.sports_complex", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.medical", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.business", "stylers": [{ "visibility": "simplified" }] }],
+        light: [{ "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "on" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#74abc3" }] }],
+        hiding: [
+          {
+              featureType: 'poi.business',
+              stylers: [{ visibility: 'off' }]
+          },
+          {
+              featureType: 'transit',
+              elementType: 'labels.icon',
+              stylers: [{ visibility: 'off' }]
+          }
+        ],
+    
+    street: [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#e85113" }] }, { "featureType": "administrative", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }, { "weight": 6 }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "lightness": 20 }, { "color": "#efe9e4" }] }, { "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#f0e4d3" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "poi", "elementType": "labels.text.fill", "stylers": [{ "hue": "#11ff00" }] }, { "featureType": "poi", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }, { "featureType": "poi", "elementType": "labels.icon", "stylers": [{ "hue": "#4cff00" }, { "saturation": 58 }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "lightness": -100 }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#efe9e4" }, { "lightness": -25 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#efe9e4" }, { "lightness": -40 }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#efe9e4" }, { "lightness": -10 }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "color": "#efe9e4" }, { "lightness": -20 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#19a0d8" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "lightness": -100 }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "lightness": 100 }] }]
+    };
     google.maps.event.addDomListener(window, 'load', initGoogleMap);
 
 
