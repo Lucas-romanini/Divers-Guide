@@ -29,6 +29,7 @@ namespace DiversGuide.Controllers
         SpotsFac sf = new SpotsFac();
         RatingFac rf = new RatingFac();
         SpotsFac ssf = new SpotsFac();
+        CategoriFac catf = new CategoriFac();
         public ActionResult Index()
         {
             svm.spots = ssf.GetAll();
@@ -39,7 +40,7 @@ namespace DiversGuide.Controllers
 
         public ActionResult Kontakt()
         {
-            return View();
+            return View(catf.GetAll());
         }
     }
 }

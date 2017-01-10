@@ -12,5 +12,7 @@ namespace DGrepo
         public string Adress { get; set; }
         public string Email { get; set; }
         public string TLF { get; set; }
+        public string Name { get; set; }
+        public string website { get; set; }
     }
 }
